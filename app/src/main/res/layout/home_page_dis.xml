@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cecyt9.ipn.edu.ipncardmov.homePage">
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="cerrarS"
+        android:text="C. Sesión"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/txtVwUsuario"
+        android:layout_width="224dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:text="Bienvenido"
+        android:textColor="@android:color/background_dark"
+        android:textColorLink="@android:color/background_dark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ImageView
+        android:id="@+id/imagenesDistintas"
+        android:layout_width="301dp"
+        android:layout_height="275dp"
+        app:srcCompat="@drawable/logotipodevol"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="137dp"
+        app:layout_constraintHorizontal_bias="0.504" />
+
+    <TextView
+        android:id="@+id/txtVwBoleta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imagenesDistintas"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVwUsuario"
+        android:layout_marginStart="96dp" />
+
+    <ImageButton
+        android:id="@+id/imgBtnCall"
+        android:layout_width="94dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="29dp"
+        android:onClick="llamadaTelefono"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/icollamada" />
+
+    <ImageButton
+        android:id="@+id/imgBtnMap"
+        android:layout_width="94dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="29dp"
+        android:onClick="googleMaps"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/icomap" />
+
+    <ImageButton
+        android:id="@+id/imgBtnHP"
+        android:layout_width="94dp"
+        android:layout_height="89dp"
+        android:onClick="abrirPaginaWeb"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/icohp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imgBtnMap"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="29dp" />
+
+</android.support.constraint.ConstraintLayout>
